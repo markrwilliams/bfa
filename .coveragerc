@@ -1,0 +1,13 @@
+[run]
+branch = True
+source =
+    bfa
+
+[paths]
+source =
+   src/bfa
+   .tox/*/lib/python*/site-packages/bfa
+   .tox/*/site-packages/bfa
+
+[report]
+show_missing = True
