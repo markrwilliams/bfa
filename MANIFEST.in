@@ -1,0 +1,21 @@
+include LICENSE *.rst *.toml .readthedocs.yml
+
+# Don't package GitHub-specific files.
+exclude .travis.yml
+
+# Tests
+include tox.ini .coveragerc 
+recursive-include tests *.py
+
+include *.md
+include *.yaml
+recursive-include docs *.bat
+
+# Documentation
+include docs/Makefile docs/docutils.conf
+recursive-include docs *.png
+recursive-include docs *.svg
+recursive-include docs *.py
+recursive-include docs *.rst
+prune docs/_build
+
